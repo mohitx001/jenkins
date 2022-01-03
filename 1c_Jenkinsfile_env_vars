@@ -11,6 +11,7 @@ pipeline {
             steps {
                 sh 'printenv'
                 sh 'echo $TEST_ENV inside Build Stage'
+                echo "$$TEST_ENV inside Build Stage"
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
