@@ -5,7 +5,7 @@ pipeline{
     }
     stages{
         stage('build'){
-            step{
+            steps{
                 echo "in build stage"
                 echo "runnig ${env.BUILD_ID} on ${env.JENKIS_URL} " 
 
@@ -14,7 +14,7 @@ pipeline{
     }
     stages('test'){
         stage{
-            step{
+            steps{
                 echo "in test area"
                 echo "${params.name} is the name of aws service"
                 
@@ -23,7 +23,7 @@ pipeline{
     }
     stages(deploy){
         stage{
-            step{
+            steps{
                 
             }
         }
