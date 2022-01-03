@@ -1,7 +1,7 @@
 pipeline{
     agent any
     parameters {
-        string(name:'select region ',defaultValue: 'us-east-1', description: "thankyou for beign here")
+        string(name:'select_region',defaultValue: 'us-east-1', description: "thankyou for beign here")
     }
     stages{
         stage('build'){
@@ -15,7 +15,7 @@ pipeline{
         stage('test'){
             steps{
                 echo "in test area"
-                echo "${params.select region}in this region running "
+                echo "${params.select_region}in this region running "
                 
             }
         }
