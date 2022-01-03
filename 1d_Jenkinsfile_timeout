@@ -4,7 +4,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 retry(3) {
-                    sh 'echo123 hello'
+                    sh 'echo hello'
                 }
                 timeout(time: 20, unit: 'SECONDS') {
                     sh 'sleep 5'
