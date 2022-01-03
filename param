@@ -1,7 +1,7 @@
 pipeline{
     agent any
     parameters {
-        string(name:'ec2-instance',defaultvalue: 'us-east-1', decription: "thankyou for beign here")
+        string(name:'ec2-instance',defaultValue: 'us-east-1', description: "thankyou for beign here")
     }
     stages{
         stage('build'){
