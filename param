@@ -11,20 +11,18 @@ pipeline{
 
             }
         }
-    }
-    stages('test'){
-        stage{
+    
+        stage('test'){
             steps{
                 echo "in test area"
                 echo "${params.name} is the name of aws service"
                 
             }
         }
-    }
-    stages(deploy){
-        stage{
+    
+        stage(deploy){
             steps{
-                
+                echo "deploying changes"
             }
         }
     }
