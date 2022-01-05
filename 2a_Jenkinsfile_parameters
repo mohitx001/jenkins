@@ -13,8 +13,8 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                sh 'echo ${params.PERSON}'
-                sh 'echo Hello ${params.PERSON} '
+                
+                echo "Hello ${params.PERSON} '" 
                 echo "Biography: ${params.BIOGRAPHY}"
                 echo "Toggle: ${params.TOGGLE}"
                 echo "Choice: ${params.CHOICE}"
