@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "hi mohit is here"
+a=$date
+echo "hi mohit is here $a"
 echo "this is imohitjadhav@gmail.com"
 echo "use git hub or not? ; $1
-$date
